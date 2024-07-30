@@ -54,8 +54,8 @@ $Runspacehash.host = $Host
 $Clockhash.TimeColor = $TimeColor
 $Clockhash.DateColor = $DateColor
 $Runspacehash.runspace = [RunspaceFactory]::CreateRunspace()
-$Runspacehash.runspace.ApartmentState = “STA”
-$Runspacehash.runspace.ThreadOptions = “ReuseThread”
+$Runspacehash.runspace.ApartmentState = "STA"
+$Runspacehash.runspace.ThreadOptions = "ReuseThread"
 $Runspacehash.runspace.Open() 
 $Runspacehash.psCmd = {Add-Type -AssemblyName PresentationCore,PresentationFramework,WindowsBase}.GetPowerShell() 
 $Runspacehash.runspace.SessionStateProxy.SetVariable("Clockhash",$Clockhash)
