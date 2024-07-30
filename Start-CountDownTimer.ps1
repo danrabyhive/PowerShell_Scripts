@@ -123,11 +123,6 @@ $psCmd.Invoke()
 $psCmd.Commands.Clear() 
 $psCmd.AddScript({ 
 
-    #Load Required Assemblies
-    Add-Type –assemblyName PresentationFramework
-    Add-Type –assemblyName PresentationCore
-    Add-Type –assemblyName WindowsBase
-
     #Build the UI
     [xml]$xaml = @"
     <Window
