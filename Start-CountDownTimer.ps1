@@ -100,8 +100,8 @@ Param (
     ) 
     
 $rs = [RunspaceFactory]::CreateRunspace()
-$rs.ApartmentState = “STA”
-$rs.ThreadOptions = “ReuseThread”
+$rs.ApartmentState = "STA"
+$rs.ThreadOptions = "ReuseThread"
 $rs.Open() 
 $rs.SessionStateProxy.SetVariable('EndDate',$EndDate) 
 $rs.SessionStateProxy.SetVariable('Message',$Message) 
